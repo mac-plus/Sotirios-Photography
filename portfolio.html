@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Sotirios Photography</title>
+    <title>Sotirios Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background: black; color: white; text-align: center; }
-        
-        nav { position: fixed; top: 0; width: 100%; padding: 15px; background: rgba(0, 0, 0, 0.8); text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 15px; font-size: 18px; }
-
-        .container { padding: 50px; max-width: 800px; margin: auto; }
-        .portfolio img { width: 100%; border-radius: 5px; }
-
+        body { font-family: Arial, sans-serif; background: black; color: white; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+<!-- Navbar -->
+<nav class="bg-gray-900 p-4 text-center text-white">
+    <a href="index.html" class="mx-4">Home</a>
+    <a href="portfolio.html" class="mx-4">Portfolio</a>
+    <a href="about.html" class="mx-4">About</a>
+    <a href="contact.html" class="mx-4">Contact</a>
 </nav>
 
-<div class="container">
-    <h2>Portfolio</h2>
-    <p>Explore my latest landscape photography.</p>
-    <div class="portfolio">
-        <img src="https://images.unsplash.com/photo-1495562569060-2eec283d3391?w=600&h=400&fit=crop" alt="Photo 1">
-        <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=600&h=400&fit=crop" alt="Photo 2">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="Photo 3">
+<!-- Hero Section -->
+<section class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1582661613749-25c12f2119b4?w=1600&h=900&fit=crop');">
+    <h1 class="text-4xl bg-gray-800 bg-opacity-60 p-5 rounded-lg">Capturing Moments, Telling Stories</h1>
+</section>
+
+<!-- Portfolio Section -->
+<div class="container text-center my-12">
+    <h2 class="text-3xl my-6">Portfolio</h2>
+    
+        <img src="https://images.unsplash.com/photo-1582661613749-25c12f2119b4?w=600&h=400&fit=crop" alt="Landscape 4" class="rounded-lg shadow-lg hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1582661613749-25c12f2119b4?w=600&h=400&fit=crop" alt="Landscape 1" class="rounded-lg shadow-lg hover:scale-105 transition">
+        <img src="https://source.unsplash.com/400x300/?mountain,sunset" alt="Landscape 2" class="rounded-lg shadow-lg hover:scale-105 transition">
+        <img src="https://source.unsplash.com/400x300/?city,architecture" alt="Landscape 3" class="rounded-lg shadow-lg hover:scale-105 transition">
     </div>
 </div>
 
-<footer>
-    &copy; 2025 Sotirios Photography. All rights reserved.
-</footer>
+<!-- Contact Section -->
+<div class="container text-center my-12">
+    <h2 class="text-3xl my-6">Contact Me</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-md mx-auto">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-2 mb-4 rounded">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded">
+        <textarea name="message" placeholder="Your Message" class="w-full p-2 mb-4 rounded"></textarea>
+        <button type="submit" class="bg-blue-500 px-6 py-2 rounded text-white">Send</button>
+    </form>
+</div>
+
+<footer class="bg-gray-900 text-center p-4 mt-12">&copy; 2025 Sotirios Photography. All rights reserved.</footer>
 
 </body>
 </html>

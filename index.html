@@ -53,7 +53,7 @@
     <div class="overlay">
         <h1 class="text-5xl font-bold mb-4">Something Amazing is Coming Soon!</h1>
         <p class="text-lg mb-6">We are working hard to bring you an incredible experience. Stay tuned!</p>
-        <div class="countdown" id="countdown">Launching in: 10d 12h 30m 45s</div>
+        <div class="countdown" id="countdown">Launching in: 1d 12h 30m 45s</div>
         <form class="mt-6 w-full max-w-sm">
             <input type="email" placeholder="Enter your email for updates" class="p-2 rounded text-black w-full" required>
             <button type="submit" class="bg-blue-500 px-4 py-2 rounded text-white w-full sm:w-auto mt-2">Notify Me</button>
@@ -62,7 +62,7 @@
 
     <script>
         function countdownTimer() {
-            const launchDate = new Date("2025-06-01T00:00:00").getTime();
+            const launchDate = new Date("2025-04-01T00:00:00").getTime();
             setInterval(() => {
                 const now = new Date().getTime();
                 const timeLeft = launchDate - now;
